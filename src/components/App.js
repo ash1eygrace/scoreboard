@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "./Header";
 import Player from "./Player";
+import AddPlayerForm from "./AddPlayerForm";
 
 
 const App = () => {
@@ -63,6 +64,8 @@ const App = () => {
           changeScore={handleScoreChange}
         />
       )}
+
+      <AddPlayerForm />
     </div>
   );
 
