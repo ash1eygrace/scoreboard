@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 const AddPlayerForm = () => {
+    const [value, setValue] = useState("");
 
     return (
         <form>
