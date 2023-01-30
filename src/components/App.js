@@ -29,6 +29,8 @@ const App = () => {
     }
   ]);
 
+  const [nextPlayerId, setNextplayerId] = useState(5);
+
   const handleRemovePlayer = (id) => {
     setPlayers(prevPlayers => prevPlayers.filter(p => p.id !== id));
   }
@@ -45,6 +47,20 @@ const App = () => {
       return player;
     }));
   }
+
+  const handleAddPlayer = (name) => {
+    setPlayers(prevPlayers =>  [
+      ...prevPlayers,
+      {
+        name,
+        score: 0,
+        id: nextPlayerId
+      }
+    ]);
+    setNextplayerId(prevId => prevId + 1);
+  }
+
+
 
   return (
     <div className="scoreboard">
@@ -65,7 +81,7 @@ const App = () => {
         />
       )}
 
-      <AddPlayerForm />
+      <AddPlayerForm addPlayer = {handleAddPlayer}/>
     </div>
   );
 
