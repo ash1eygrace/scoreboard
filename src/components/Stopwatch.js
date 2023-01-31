@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Stopwatch = () => {
     return (
@@ -10,7 +10,6 @@ const Stopwatch = () => {
         <button>Reset</button>
         </div>
     );
-
 }
 
 export default Stopwatch;
