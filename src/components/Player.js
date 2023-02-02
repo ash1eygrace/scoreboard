@@ -20,16 +20,16 @@ const Player = ({removePlayer, name, id, score, changeScore}) => {
     );
   }
 
-  const playerPropsAreEqual = (prevProps, nextProps) => {
-    return prevProps.score === nextProps.score;
-  }
-  
-  Player.propTypes = {
-    name: PropTypes.string,
-    id: PropTypes.number,
-    score: PropTypes.number,
-    changeScore: PropTypes.func,
-    removePlayer: PropTypes.func
-  }
+Player.propTypes = {
+  name: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  score: PropTypes.number.isRequired,
+  changeScore: PropTypes.func.isRequired,
+  removePlayer: PropTypes.func.isRequired
+}
 
-  export default memo(Player, playerPropsAreEqual);
+const playerPropsAreEqual = (prevProps, nextProps) => {
+  return prevProps.score === nextProps.score;
+}
+
+export default memo(Player, playerPropsAreEqual);
