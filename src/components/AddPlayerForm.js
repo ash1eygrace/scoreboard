@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
-const AddPlayerForm = (props) => {
+const AddPlayerForm = ({addPlayer}) => {
     const [value, setValue] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.addPlayer(value);
+        addPlayer(value);
         setValue("");
     }
 
