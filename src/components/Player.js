@@ -19,7 +19,7 @@ const Player = (props) => {
     );
   }
 
-  const playPropsAreEqual = (prevProps, nextProps) => {
+  const playerPropsAreEqual = (prevProps, nextProps) => {
     return prevProps.score === nextProps.score;
   }
   
