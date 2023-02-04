@@ -32,7 +32,7 @@ Player.propTypes = {
 }
 
 const playerPropsAreEqual = (prevProps, nextProps) => {
-  return prevProps.score === nextProps.score;
+  return prevProps.score === nextProps.score && prevProps.isHighScore === nextProps.isHighScore;
 }
 
 export default memo(Player, playerPropsAreEqual);
