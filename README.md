@@ -2,7 +2,8 @@
 
 Live site: https://scoreboard.ash1eygrace.com/
 
-https://user-images.githubusercontent.com/29527450/222151963-7bf52dd2-e127-46ea-969b-6c46a4f19ff4.mov
+https://user-images.githubusercontent.com/29527450/222158791-85384e74-d34f-42ad-81b3-572f864fbdea.mov
+
 
 ## Purpose of this App 🤖
 
